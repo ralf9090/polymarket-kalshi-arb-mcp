@@ -6,10 +6,12 @@ startCommand:
     properties:
       apiKey:
         type: string
-        description: "Optional Agent Kiosk API key (ak_live_...) for unlimited calls. Leave empty for 2 free calls/day, or get a pass at https://agent-kiosk.vercel.app/buy"
+        description: "Optional ak_live_... API key for unlimited calls (2 free calls/day included automatically)"
   commandFunction: |-
     (config) => ({
       command: 'node',
       args: ['index.js'],
-      env: config.apiKey ? { AGENT_KIOSK_API_KEY: config.apiKey } : {}
+      env: {
+        AGENT_KIOSK_API_KEY: config.apiKey || ''
+      }
     })

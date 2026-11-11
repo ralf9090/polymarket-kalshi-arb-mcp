@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ralf9090/polymarket-kalshi-arb-mcp",
+  "title": "Polymarket & Kalshi prediction market odds aggregator and cross-venue arbitrage scanner MC",
+  "description": "Polymarket & Kalshi prediction market odds aggregator and cross-venue arbitrage scanner MCP server (Zero-config stdio & Remote HTTP, 2 free calls/day + x402).",
+  "version": "1.0.0",
+  "websiteUrl": "https://agent-kiosk.vercel.app/buy",
+  "repository": {
+    "url": "https://github.com/ralf9090/polymarket-kalshi-arb-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "polymarket-kalshi-arb-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
