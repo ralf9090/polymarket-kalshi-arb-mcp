@@ -1,0 +1,36 @@
+{
+  "name": "polymarket-kalshi-arb-mcp",
+  "version": "1.0.0",
+  "description": "Polymarket & Kalshi prediction market odds aggregator and cross-venue arbitrage scanner MCP server (Zero-config stdio & Remote HTTP, 2 free calls/day + x402).",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "polymarket-kalshi-arb-mcp": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build": "node --check index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ralf9090/polymarket-kalshi-arb-mcp.git"
+  },
+  "homepage": "https://agent-kiosk.vercel.app/buy",
+  "bugs": {
+    "url": "https://github.com/ralf9090/polymarket-kalshi-arb-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "polymarket",
+    "kalshi",
+    "prediction-markets",
+    "arbitrage",
+    "ai-agents",
+    "x402"
+  ]
+}
